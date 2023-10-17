@@ -17,6 +17,10 @@ allList.forEach((item) => {
       active.querySelector("#icon").style.transform = "rotate(0deg)";
     }
 
-    active = item;
+    if (active === item) {
+      active = null;
+    } else {
+      active = item;
+    }
   });
 });

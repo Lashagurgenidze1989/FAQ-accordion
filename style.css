@@ -14,10 +14,10 @@ html {
 body {
   background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
   padding: 14.8rem 2.4rem 8.5rem 2.4rem;
-  /*   background-image: url(./images/illustration-woman-online-mobile.svg);
-  background-repeat: no-repeat;
-  background-position: 45px -109px;
-  background-size: 23.7rem 18rem; */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
@@ -46,17 +46,6 @@ main {
   top: -109px;
   right: 45px;
 }
-
-/* .shadow {
-  width: 240px;
-  height: 145px;
-  background: #6862e6;
-  opacity: 1;
-  position: absolute;
-  top: -109px;
-  right: 45px;
-  transform: rotate(45deg);
-} */
 
 main h1 {
   color: #1e1f36;
@@ -102,11 +91,23 @@ main h1 {
   width: 36ch;
 }
 
+#icon {
+  transition: transform 0.3s ease;
+}
+
+.accordion-header:hover {
+  cursor: pointer;
+}
+
+.question:hover {
+  color: #f47b56;
+  transition: color 0.4s ease;
+}
+
 @media (min-width: 1440px) {
   body {
     background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
     padding: 13rem 23.9rem 13rem 28.1rem;
-    height: 100vh;
   }
 
   main {
