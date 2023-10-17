@@ -33,6 +33,9 @@ main {
   width: 327.33px;
   margin: 0 auto;
   position: relative;
+  background-image: url(./images/mobile-shadow.svg);
+  background-repeat: no-repeat;
+  background-position: 44px 0px;
 }
 
 #box {
@@ -114,10 +117,11 @@ main h1 {
     padding: 6.5rem 9.5rem 6.4rem 47.6rem;
     width: 920px;
     gap: 4.5rem;
-    background-image: url(./images/illustration-woman-online-desktop.svg);
+    background-image: url(./images/illustration-woman-online-desktop.svg),
+      url(./images/mobile-shadow.svg);
     background-repeat: no-repeat;
-    background-position: -77px 62px;
-    background-size: 43rem 32rem;
+    background-position: -77px 62px, -546px -17px;
+    background-size: 43rem 32rem, 90rem 86rem;
     align-items: start;
     position: relative;
   }
