@@ -1,6 +1,6 @@
 const allList = document.querySelectorAll(".accordion-list");
 let active = null;
-debugger;
+
 allList.forEach((item) => {
   const header = item.querySelector(".accordion-header");
   const question = item.querySelector(".question");
@@ -12,12 +12,12 @@ allList.forEach((item) => {
     question.style.fontWeight = "bold";
     images.style.transform = "rotate(180deg)";
 
-    if (active) {
+    /* if (active) {
       active.querySelector(".answer").style.fontWeight = "none";
       active.querySelector(".question").style.fontWeight = "normal";
       active.querySelector("#icon").style.transform = "rotate(180deg)";
     }
 
-    active = header;
+    active = header; */
   });
 });

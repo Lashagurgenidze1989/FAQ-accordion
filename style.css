@@ -5,12 +5,123 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-size: 10px;
 }
 html {
-  font-size: 10px;
-  font-family: "Chivo";
+  font-family: "Kumbh Sans";
+}
+
+body {
+  background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
+  padding: 14.8rem 2.4rem 8.5rem 2.4rem;
+  /*   background-image: url(./images/illustration-woman-online-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 45px -109px;
+  background-size: 23.7rem 18rem; */
+}
+
+main {
+  padding: 13.2rem 2.5rem 3.9rem;
+  border-radius: 23px;
+  background: #fff;
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.8rem;
+  width: 327.33px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  width: 23.7rem;
+  height: 18rem;
+  top: -109px;
+  right: 45px;
+}
+
+/* .shadow {
+  width: 240px;
+  height: 145px;
+  background: #6862e6;
+  opacity: 1;
+  position: absolute;
+  top: -109px;
+  right: 45px;
+  transform: rotate(45deg);
+} */
+
+main h1 {
+  color: #1e1f36;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.accordion {
+  list-style-type: none;
+  width: 27.9rem;
+}
+
+.accordion-list {
+  border-bottom: 1px solid #e8e8ea;
+  margin-bottom: 1.9rem;
+  padding-bottom: 1.8rem;
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.question {
+  color: #4b4c5f;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .answer {
   display: none;
+  padding-top: 1.3rem;
+  color: #787887;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.8rem;
+  width: 36ch;
+}
+
+@media (min-width: 1440px) {
+  body {
+    background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
+    padding: 13rem 23.9rem 13rem 28.1rem;
+    height: 100vh;
+  }
+
+  main {
+    padding: 6.5rem 9.5rem 6.4rem 47.6rem;
+    width: 920px;
+    gap: 4.5rem;
+    background-image: url(./images/illustration-box-desktop.svg),
+      url(./images/illustration-woman-online-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -46px 213px, -77px 62px;
+    background-size: 11rem 10.6rem, 43rem 32rem;
+    align-items: start;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .question {
+    font-size: 1.4rem;
+  }
 }
